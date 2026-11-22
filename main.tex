@@ -1,0 +1,151 @@
+\documentclass[12pt,a4paper]{report}
+\usepackage[top=1in, bottom=1in, left=1.5in, right=1.2in]{geometry}
+\usepackage{graphicx}
+\usepackage{url} 
+\usepackage[bookmarks, colorlinks=false, pdfborder={0 0 0}, pdftitle={Analysis and Design of Algorithms Lab Report}, pdfauthor={Shaik Akthar (241493)}, pdfsubject={BT CS 505A}, pdfkeywords={ADA, Algorithms, Python, Central University of Haryana}]{hyperref}
+\usepackage{tabularx}
+\usepackage{fontspec} % Required for rendering Hindi (Devanagari) script via XeLaTeX or LuaLaTeX
+\usepackage{color}
+\usepackage{float}
+
+\usepackage[utf8]{inputenc}
+% \geometry{margin=1in}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{tocloft}
+\usepackage{qrcode}
+
+% Set up a font that supports Devanagari script (e.g., Mangal, Kokila, or Shobhika)
+\setmainfont{DejaVu Serif}
+\newfontfamily\devanagarifont{NotoSerifDevanagari}[
+    Path=/usr/share/fonts/noto/,
+    Extension=.ttf,
+    UprightFont=*-Regular,
+    BoldFont=*-Bold
+]
+\definecolor{headerblue}{RGB}{94, 127, 172} % Approximate color from the image
+
+% --- Custom Colors for Code Highlighting ---
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+% --- Listing Style Configuration ---
+% If your entire lab record is switching from C++ to Python then change the language attribute from C++ to Python.
+\lstset{
+    language=Python,
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+}
+
+% --- Custom Command for Automated Indexing and End line ---
+\newcommand{\newprogram}[2]{%
+    \section*{#1: #2}%
+    \addcontentsline{toc}{section}{#1: #2}%
+}
+
+% Folder path for image asset
+\graphicspath{{Images/}}
+
+%\fontsize{font size}{vertsize (usually 1.2x)}\selectfont
+
+\begin{document}
+\renewcommand{\familydefault}{\rmdefault}
+
+\input{./Layout/titlepage}
+% \input{./Layout/headerfooter}
+
+% --- Automatic Index (Table of Contents) ---
+\renewcommand{\contentsname}{INDEX}
+\tableofcontents
+\newpage
+
+\pagebreak
+\listoffigures
+\pagebreak
+
+\input{Sections/program-1}
+\pagebreak
+
+\input{Sections/program-2}
+\pagebreak
+
+\input{Sections/program-3}
+\pagebreak
+
+
+\input{Sections/program-4}
+\pagebreak
+
+
+\input{Sections/program-5}
+\pagebreak
+
+
+\input{Sections/program-6}
+\pagebreak
+
+
+\input{Sections/program-7}
+\pagebreak
+
+
+\input{Sections/program-8}
+\pagebreak
+
+
+\input{Sections/program-9}
+\pagebreak
+
+\input{Sections/program-10}
+\pagebreak
+
+\input{Sections/program-11}
+\pagebreak
+
+\input{Sections/program-12}
+\pagebreak
+
+\input{Sections/program-13}
+\pagebreak
+
+\input{Sections/program-14}
+\pagebreak
+
+\input{Sections/program-15}
+\pagebreak
+
+\input{Sections/program-16}
+\pagebreak
+
+
+
+% ==================== END OF DOCUMENT ====================
+% --- Global Lab Repository Link Placeholder ---
+\subsection*{Lab Work Repository}
+\begin{center}
+    \begin{minipage}{0.4\textwidth}
+        \centering
+        % Generates a QR code linking to the master folder repository
+        \qrcode[height=3.5cm]{https://github.com/gytdrop/ada_class} \\[0.2cm]
+        \small\bfseries Scan for Complete Lab Folder [cite: 49]
+    \end{minipage}
+\end{center}
+
+\end{document}
